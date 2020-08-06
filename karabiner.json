@@ -16,6 +16,40 @@
                 },
                 "rules": [
                     {
+                        "description": "左 Command + Pageup を押したときに Control + Tab を送信する",
+                        "manipulators": [
+                            { "type": "basic",
+                                "from": {
+                                    "key_code": "page_up",
+                                    "modifiers": { "mandatory": [ "left_command" ] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "tab",
+                                        "modifiers": [ "control" ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "description": "左 Command + Pagedown を押したときに Control + Shift + Tab を送信する",
+                        "manipulators": [
+                            { "type": "basic",
+                                "from": {
+                                    "key_code": "page_down",
+                                    "modifiers": { "mandatory": [ "left_command" ] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "tab",
+                                        "modifiers": [ "control", "shift" ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
                         "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな） (rev 3)",
                         "manipulators": [
                             {
