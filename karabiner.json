@@ -16,41 +16,6 @@
                 },
                 "rules": [
                     {
-                        "description": "delete forward を単体で押したときに、delete_or_backspace を送信する。",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "delete_forward",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "parameters": {
-                                    "basic.to_if_held_down_threshold_milliseconds": 100
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "delete_forward",
-                                        "lazy": true
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "key_code": "delete_or_backspace"
-                                    }
-                                ],
-                                "to_if_held_down": [
-                                    {
-                                        "key_code": "delete_or_backspace"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "左 Command + Delete を押したときに mission control を送信する",
                         "manipulators": [
                             {
@@ -298,6 +263,41 @@
                                     }
                                 },
                                 "type": "mouse_motion_to_scroll"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "delete forward を単体で押したときに、delete_or_backspace を送信する。",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "delete_forward",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "parameters": {
+                                    "basic.to_if_held_down_threshold_milliseconds": 100
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "delete_forward",
+                                        "lazy": true
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "delete_or_backspace"
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "delete_or_backspace"
+                                    }
+                                ],
+                                "type": "basic"
                             }
                         ]
                     }
