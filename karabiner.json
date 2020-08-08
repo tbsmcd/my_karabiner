@@ -37,7 +37,7 @@
                         ]
                     },
                     {
-                        "description": "左 Command + Pageup を押したときに Control + Tab を送信する",
+                        "description": "左 Command + Pageup を押したときに Cmd + Tab を送信する（アプリケーションの選択）",
                         "manipulators": [
                             {
                                 "from": {
@@ -52,7 +52,7 @@
                                     {
                                         "key_code": "tab",
                                         "modifiers": [
-                                            "control"
+                                            "command"
                                         ]
                                     }
                                 ],
@@ -61,7 +61,7 @@
                         ]
                     },
                     {
-                        "description": "左 Command + Pagedown を押したときに Control + Shift + Tab を送信する",
+                        "description": "左 Command + Pagedown を押したときに Cmd + F1 を送信する（ウィンドウの選択）",
                         "manipulators": [
                             {
                                 "from": {
@@ -74,10 +74,9 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "tab",
+                                        "key_code": "f1",
                                         "modifiers": [
-                                            "control",
-                                            "shift"
+                                            "command"
                                         ]
                                     }
                                 ],
