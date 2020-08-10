@@ -37,7 +37,7 @@
                         ]
                     },
                     {
-                        "description": "左 Command + Pageup を押したときに Cmd + Tab を送信する（アプリケーションの選択）",
+                        "description": "左 Command + Pageup を押したときに音量アップを送信する",
                         "manipulators": [
                             {
                                 "from": {
@@ -50,10 +50,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "tab",
-                                        "modifiers": [
-                                            "command"
-                                        ]
+                                        "consumer_key_code": "volume_increment"
                                     }
                                 ],
                                 "type": "basic"
@@ -61,7 +58,7 @@
                         ]
                     },
                     {
-                        "description": "左 Command + Pagedown を押したときに Cmd + F1 を送信する（ウィンドウの選択）",
+                        "description": "左 Command + Pagedown を押したときに音量アップを送信する",
                         "manipulators": [
                             {
                                 "from": {
@@ -74,10 +71,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "f1",
-                                        "modifiers": [
-                                            "command"
-                                        ]
+                                        "consumer_key_code": "volume_decrement"
                                     }
                                 ],
                                 "type": "basic"
