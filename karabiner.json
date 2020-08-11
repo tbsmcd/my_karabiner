@@ -79,7 +79,7 @@
                         ]
                     },
                     {
-                        "description": "左 Command + Caps Lock を押したときに Cmd + F1 を送信する（ウィンドウの選択）",
+                        "description": "左 Command + Caps Lock を押したときに Cmd + F2 を送信する（ウィンドウの選択）",
                         "manipulators": [
                             {
                                 "from": {
@@ -92,7 +92,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "f1",
+                                        "key_code": "f2",
                                         "modifiers": [
                                             "command"
                                         ]
